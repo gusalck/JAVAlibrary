@@ -33,6 +33,7 @@ public class BookManageView {
                         break;
                     case 5:
                         bookManageService.saveBookList(); // 출력
+                        System.out.println("출력 완료");
                         break;
                     case 6:
                         System.out.println("시스템 종료");

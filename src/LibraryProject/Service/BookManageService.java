@@ -162,7 +162,7 @@ public class BookManageService {
                 System.out.println("홈으로 이동");
                 break;
             default:
-                System.out.println("잘못된 입력입니다. 다시 입력해주세요");
+                System.out.println("잘못된 입력입니다.");
         }
     }
     public void bookEdit(){
@@ -175,7 +175,7 @@ public class BookManageService {
         System.out.println("\n"+editBook+"을(를) 선택하셨습니다.\n");
         System.out.println("============================================📖 수정 할 사항을 선택해주세요 📖============================================");
 
-        System.out.println("MENU :\t\t  1️⃣ ISBN\t\t  2️⃣ 제목명\t\t  3️⃣ 작가명\t\t  4️⃣ 출판사명\t\t  5️⃣ 가격\t\t  6️⃣ 전체\t\t 7️⃣ 홈으로 돌아가기");
+        System.out.println("MENU :\t\t1️⃣ ISBN\t\t2️⃣ 제목명\t\t3️⃣ 작가명\t\t4️⃣ 출판사명\t\t5️⃣ 가격\t\t6️⃣ 전체\t\t7️⃣ 홈으로 돌아가기");
 
         int editChoice = sc.nextInt();
         switch (editChoice) {
