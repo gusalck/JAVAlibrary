@@ -70,13 +70,24 @@ public class BookManageService {
     }
 
     public void bookDelete(){
-        saveBookList();
-        System.out.println("삭제할 책 번호를 입력해주세요");
+        System.out.println("1. 번호 선택 2. 삭제 취소(홈으로 이동)");
         Scanner sc = new Scanner(System.in);
+        int choice = sc.nextInt();
         try {
-            int id = sc.nextInt();
-            bs.remove(id-1);
-            System.out.println("삭제가 완료되었습니다.\n");
+            if (choice == 1){
+                saveBookList();
+                System.out.println("삭제할 책 번호를 입력해주세요");
+                int id = sc.nextInt();
+                bs.remove(id-1);
+                System.out.println("삭제가 완료되었습니다.\n");
+            }
+            else if (choice == 2){
+                System.out.println("홈으로 이동");
+            }
+            else {
+                System.out.println("잘못된 입력입니다.");
+            }
+
         }catch (IndexOutOfBoundsException e) {
             System.out.println("잘못된 입력입니다.");
         }

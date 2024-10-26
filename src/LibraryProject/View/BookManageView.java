@@ -13,7 +13,8 @@ public class BookManageView {
         while(true){
             try {
                 System.out.println("\n=================================================📖  도서관리 시스템  📖=================================================");
-                System.out.println("MENU :\t\t\t1️⃣ 도서정보추가\t\t\t2️⃣ 조회\t\t\t3️⃣ ️️수정\t\t\t4️⃣ 삭제\t\t\t5️⃣ 출력\t\t\t6️⃣ 종료");
+                System.out.println("MENU :\t1️⃣ 도서 정보 추가\t\t2️⃣ 도서 정보 조회\t\t3️⃣ ️️도서 정보 수정\t\t4️⃣ 도서 삭제\t\t5️⃣ 도서 정보 출력\t\t6️⃣ 종료");
+                System.out.printf("MENU를 입력하세요 : ");
                 Scanner userInput = new Scanner(System.in);
                 int choice = userInput.nextInt();
 
