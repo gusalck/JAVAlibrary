@@ -20,18 +20,23 @@ public class BookManageView {
 
                 switch(choice){
                     case 1:
+                        System.out.println();
                         bookManageService.bookAddition(); // 도서정보추가
                         break;
                     case 2:
+                        System.out.println();
                         bookManageService.bookSelect(); // 조회
                         break;
                     case 3:
+                        System.out.println();
                         bookManageService.bookEdit(); // 수정
                         break;
                     case 4:
+                        System.out.println();
                         bookManageService.bookDelete(); // 삭제
                         break;
                     case 5:
+                        System.out.println();
                         bookManageService.saveBookList(); // 출력
                         System.out.println("출력 완료");
                         break;

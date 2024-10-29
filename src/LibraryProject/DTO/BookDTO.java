@@ -1,13 +1,13 @@
 package LibraryProject.DTO;
 
 public class BookDTO {// 도서에 대한 자료저장
-    private String isbn;
+    private long isbn;
     private String title;
     private String author;
     private String publisher;
     private int price;
 
-    public BookDTO(String isbn, String title, String author, String publisher, int price) {
+    public BookDTO(long isbn, String title, String author, String publisher, int price) {
         this.isbn = isbn;
         this.title = title;
         this.author = author;
@@ -15,11 +15,11 @@ public class BookDTO {// 도서에 대한 자료저장
         this.price = price;
     }
 
-    public String getIsbn() {
+    public long getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(String isbn) {
+    public void setIsbn(long isbn) {
         this.isbn = isbn;
     }
 
